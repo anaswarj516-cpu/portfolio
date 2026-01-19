@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Anaswar J</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">PORTFOLIO</a></div>
+    <div class="nav-links">
+    <a href="edits.html">Edits</a>
+    <a href="animations.html">Animations</a>
+    <a href="films.html">Films</a>
+    <a href="sound.html">Sound</a>
+    <a href="experiments.html">Experiments</a>
+</div>
+</nav>
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="boom-text">BOOM!</div>
+                <div class="image-frame">
+                    <img src="image.jpg" alt="Profile Picture">
+                    <div class="badge">HEYYY!!!</div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <h1 class="comic-title">ANASWAR J <br> <span></span></h1>
+                <div class="bio-card">
+                    <div class="info-row"><span class="label">AGE:</span> 19 YEARS OLD</div>
+                    <div class="info-row"><span class="label">LOCATION:</span> KERALA / HYDERABAD</div>
+                    <div class="info-row"><span class="label">EDUCATION:</span> Indian Institute of Technology Hyderabad / Bdes</div>
+                    <hr class="divider">
+                    <p class="bio-text">I'm your<strong> friendly neighborhood designer</strong> who experiments with <strong>video, sound, and visual storytelling.</strong> Feel free to contact me for any kind of design works</p>
+                     <div class="hero-righat">
+                <div class="bio-caard">
+                    <p class="bio-text">I have been experimenting with video editing since 2021, and now im exploring with sound design</p>
+                    <div class="software-header">Softwares I Know:</div>
+                    <div class="software-grid">
+                        <div class="soft-icon"><img src="ps-icon.png" alt="PS"></div>
+                        <div class="soft-icon"><img src="ae-icon.png" alt="AE"></div>
+                        <div class="soft-icon"><img src="pr-icon.png" alt="PR"></div>
+                        <div class="soft-icon"><img src="ai-icon.png" alt="AI"></div>
+                        <div class="soft-icon"><img src="blender-icon.png" alt="BL"></div>
+                    </div>
+                     <div class="software-header">Experiences:</div>
+<div class="software-grid">
+                        <div class="soft-icon"><img src="Finstocks.png" alt="PS"></div>
+                    <button id="openContact" class="cta-button">✉ CONTACT ME</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="work-section">
+        <h2 class="section-title">EXPLORE MY WORK</h2>
+        <div class="grid-container">
+            <a href="experiments.html" style="text-decoration: none;">
+                <div class="card card-exp">
+                    <div class="card-icon">⚡</div>
+                    <h3>EXPERIMENTS</h3>
+                    <div class="proj-count">4 PROJECTS</div>
+                </div>
+            </a>
+
+            <div class="card card-films">
+                <div class="card-icon">🎞️</div>
+                <h3>FILMS</h3>
+                <div class="proj-count">3 PROJECTS</div>
+            </div>
+
+            <div class="card card-sound">
+                <div class="card-icon">♫</div>
+                <h3>SOUND</h3>
+                <div class="proj-count">3 PROJECTS</div>
+            </div>
+
+            <div class="card card-design">
+                <div class="card-icon">📷</div>
+                <h3>DESIGN</h3>
+                <div class="proj-count">3 PROJECTS</div>
+            </div>
+        </div>
+    </section>
+<div id="contactModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span id="closeContact" class="close-btn">&times;</span>
+        <h2 class="comic-title" style="font-size: 40px; margin-top: 10px;">GET IN <span>TOUCH</span></h2>
+        <hr class="divider">
+        <div class="contact-info" style="margin: 30px 0; text-align: left;">
+            <div class="info-row" style="margin-bottom: 15px;">
+                <span class="label">PHONE:</span> +91 8848296217
+            </div>
+            <div class="info-row" style="margin-bottom: 15px;">
+                <span class="label">EMAIL:</span> anaswarj516@gmail.com
+            </div>
+            <div class="info-row">
+                <span class="label">INSTA:</span> @work.anuu
+            </div>
+        </div>
+        <button class="cta-button" onclick="window.location.href='mailto:anaswarj516@gmail.com'">SEND AN EMAIL</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("contactModal");
+    const openBtn = document.getElementById("openContact");
+    const closeBtn = document.getElementById("closeContact");
+
+    // Open Modal
+    if(openBtn) {
+        openBtn.addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+    }
+
+    // Close Modal via X
+    if(closeBtn) {
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+    }
+
+    // Close Modal if clicking outside the box
+    window.addEventListener("click", function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+</script>
